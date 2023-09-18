@@ -1666,20 +1666,31 @@ body {
 //calculator1
 
 .calculator-page {}
+.calculator-page-1{
+    .calculator-info{
+        background: #F4F4F4;
+    }
+}
 
 .calculator-info {
+    overflow: hidden;
     position: relative;
     background: #F4F4F4;
     padding-top: 74px;
     height: 548px;
     &__breadcrumbs {
         margin-bottom: 35px;
+        position: relative;
+        z-index: 2;
     }
 
     &__description {
-        width: 56%;
+        max-width: 690px;
+        width: 86%;
         @include text(18px);
         margin-bottom: 65px;
+        position: relative;
+        z-index: 2;
     }
 
     &__title {
@@ -1688,8 +1699,9 @@ body {
 
     &__decor {
         position: absolute;
-        right: 0;
+        right:-160px;
         top: 42px;
+        width: 504px;
     }
 }
 
@@ -1716,5 +1728,66 @@ body {
 
 
 .calculator-main {
-    &__form {}
+    &__form {
+        border-radius: 14px;
+        background: #FFF;
+        box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+        height: 500px;
+        width: 100%;
+        margin-top: -200px;
+        position: relative;
+        z-index: 3;
+
+    }
+}
+
+.calculator-page-2{
+    .calculator-info{
+        background: #E2F3F4;
+    }
+}
+.calculator-page-3{
+    .calculator-info{
+        background: #E2EBF4;
+    }
+}
+.calculator-page-4{
+    .calculator-info{
+        background: #E2EBF4;
+    }
+}
+.calculator-page-5{
+    .calculator-info{
+        background: #E5E2F4;
+    }
+}
+.calculator-page-6{
+    .calculator-info{
+        background: #F4E2F2;
+    }
+}
+.calculator-page-7{
+    .calculator-info{
+        background: #F4E2EB;
+    }
+}
+.calculator-page-8{
+    .calculator-info{
+        background: #ECE2F4;
+    }
+}
+.calculator-page-9{
+    .calculator-info{
+        background: #E2EFF4;
+    }
+}
+.calculator-page-10{
+    .calculator-info{
+        background: #E2EFF4;
+    }
+}
+.calculator-page-11{
+    .calculator-info{
+        background: #F4EDE2;
+    }
 }
