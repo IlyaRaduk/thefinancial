@@ -1,0 +1,54 @@
+.second-cards{
+    position: relative;
+
+    .slick-track {
+        display: flex;
+        gap: 20px;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 5;
+        top: -84px;
+        width: 40px;
+        height: 40px;
+        font-size: 0; //убрать дефолтные надписи на кнопках
+        transition: all 0.2s linear;
+
+        // &:hover{
+        //     transform: scale(1.2);
+        //     // transform: translateY(-5px);
+        // }
+
+        &.slick-prev {
+            right: 60px;
+            background: url('./../img/arr_left.svg') 0 0 / 100% no-repeat;
+        }
+
+        &.slick-next {
+            right: 0px;
+            background: url('./../img/arr_right.svg') 0 0 / 100% no-repeat;
+        }
+        &.slick-disabled{
+            opacity: 0.5;
+        }
+    }
+
+}
+.recommend-cards{
+    position: relative;
+
+    .slick-track {
+        display: flex;
+        gap: 20px;
+    }
+
+    .slick-list {
+        overflow: hidden;
+    }
+
+}

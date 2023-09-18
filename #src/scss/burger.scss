@@ -1,0 +1,64 @@
+//бургер меню
+.burger-menu {
+   
+}
+
+.burger-active {
+    overflow: hidden;
+}
+
+.burger-btn {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    display: none;
+    z-index: 11;
+
+    span {
+        width: 19px;
+        border-radius: 5px;
+        height: 2.5px;
+        position: absolute;
+        top: 0;
+        left: 13%;
+        transition: all 0.3s;
+        background-color: rgba(255, 255, 255, 1)
+    }
+
+    span:nth-of-type(2) {
+        top: calc(50% - 6px);
+    }
+
+    span:nth-of-type(3) {
+
+        top: calc(50% + 6px);
+    }
+
+    span:nth-of-type(1) {
+        top: calc(50%);
+    }
+
+    &.active span:nth-of-type(1) {
+        display: none;
+    }
+
+    &.active span:nth-of-type(2) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    &.active span:nth-of-type(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+}
+
+@media(max-width:975px) {
+    .burger-btn {
+        display: block;
+    }
+}
+
+@media(max-width:600px) {
+   
+}
